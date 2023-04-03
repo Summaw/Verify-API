@@ -97,13 +97,12 @@ phoneMessages.forEach(msg => {
       }`
       
 **Example Usage**:
-
-    ```javascript
+```javascript
       const Genemail = await generateEmail();
       console.log(`[+] Generated Email: ` + Genemail.email) // returns just email generated
       console.log(`[+] Generated Email: ` + Genemail.cookie) // returns cookie (only needed for getMessageID and getEmailBody function)
       console.log(`[+] Generated Email: ` + Genemail.x_xsfr_token) // returns xsfr token (only needed for getMessageID and getEmailBody function)
-    ```
+```
 
  **GetMessageID**:
 
@@ -122,25 +121,23 @@ phoneMessages.forEach(msg => {
      `You will need to pass the email and messageID of the email you want to get the body of.`
 
 **Example**:
-  
-    ```javascript
+```javascript
     const emailBody = await getEmailBody(email, messageID);
     console.log('[+] Email Content: ' + emailBody)
-    ```
+```
     
 **GeneratePhoneNumber**:
 
      `generateNumber function will return an object containing the number, country code, cookie and xsfr token.`
      
 **Usage Example**:
-
-     ```javascript
-     const genNumber = await generateNumber();
-     console.log(`[+] Generated Number: ` + genNumber.number)
-     console.log(`[+] Country_Code: ` + genNumber.country_code)
-     console.log(`[+] Cookies: ` + genNumber.cookie)
-     console.log(`[+] XSFR-Token: ` + genNumber.x_xsfr_token)
-     ```
+```javascript
+  const genNumber = await generateNumber();
+  console.log(`[+] Generated Number: ` + genNumber.number)
+  console.log(`[+] Country_Code: ` + genNumber.country_code)
+  console.log(`[+] Cookies: ` + genNumber.cookie)
+  console.log(`[+] XSFR-Token: ` + genNumber.x_xsfr_token)
+```
       
 **GetPhoneMessages**:
 
@@ -152,15 +149,16 @@ phoneMessages.forEach(msg => {
      
      `A Usage Example is left in the getPhoneID.js file.`
      
-     `Response from api:
-     ```json
+     `Response from api:`
+     
+ ```json
       {
          "messageID": 572134,
          "from": "Facebook",
          "message": "962630 is your Facebook code. Don't share it.",
          "time": "1 hour ago"
       },
-     ```
+```
       
    
  **FIXED ERRORS/BUGS**:
