@@ -14,10 +14,14 @@
         x_xsfr_token: `${x_xsfr_token}=`
       }
       
-Example Usage:
+**Example Usage**:
+
     const Genemail = await generateEmail();
+    
     console.log(`[+] Generated Email: ` + Genemail.email) | returns just email generated
+    
     console.log(`[+] Generated Email: ` + Genemail.cookie) | returns cookie (only needed for getMessageID and getEmailBody function)
+    
     console.log(`[+] Generated Email: ` + Genemail.x_xsfr_token) | returns xsfr token (only needed for getMessageID and getEmailBody function)`
 
  **GetMessageID**:
