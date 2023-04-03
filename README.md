@@ -88,7 +88,9 @@ phoneMessages.forEach(msg => {
 
 **Generate Email**:
 generateEmail function sends a request to the api to generate a new email for you, and returns a object (Follow instructions to return just email)
+
 Response:
+
 ```
 let obj = {
     email: GenerateEmail.data.email[0],
@@ -105,21 +107,22 @@ console.log(`[+] Generated Email: ` + Genemail.cookie) // returns cookie (only n
 console.log(`[+] Generated Email: ` + Genemail.x_xsfr_token) // returns xsfr token (only needed for getMessageID and getEmailBody function)
 ```
 
- **GetMessageID**:
+**GetMessageID**:
+```
+getMessageID function will return an array of messages recieved on the generated email.
 
-     `getMessageID function will return an array of messages recieved on the generated email.`
+The array will contain the messageID, subject, and date recieved.
+ 
+You could loop through the array and find the messageID of the email you want to get the body of.
 
-     `The array will contain the messageID, subject, and date recieved.`
-
-     `You could loop through the array and find the messageID of the email you want to get the body of.`
-
-     `Instructions are left in the getMessageID.js file.`
+Instructions are left in the getMessageID.js file.
+```
    
 **GetEmailBody**:
-
-     `getEmailBody function will return the body of the email you want to get the body of.`
-
-     `You will need to pass the email and messageID of the email you want to get the body of.`
+```
+getEmailBody function will return the body of the email you want to get the body of.
+You will need to pass the email and messageID of the email you want to get the body of.
+```
 
 **Example**:
 ```javascript
@@ -128,8 +131,9 @@ console.log(`[+] Generated Email: ` + Genemail.x_xsfr_token) // returns xsfr tok
 ```
     
 **GeneratePhoneNumber**:
-
-`generateNumber function will return an object containing the number, country code, cookie and xsfr token.`
+```
+generateNumber function will return an object containing the number, country code, cookie and xsfr token.
+```
      
 **Usage Example**:
 ```javascript
@@ -141,30 +145,29 @@ console.log(`[+] Generated Email: ` + Genemail.x_xsfr_token) // returns xsfr tok
 ```
       
 **GetPhoneMessages**:
-
-     `getPhoneMessages function will return an array of messages recieved on the generated phone number.`
-     
-     `The array will contain the messageID, subject, and time recieved.`
-     
-     `You could loop through the array of objects and find a specific provider you are looking for.`
-     
-     `A Usage Example is left in the getPhoneID.js file.`
-     
-     `Response from api:`
-     
 ```
-      {
-         "messageID": 572134,
-         "from": "Facebook",
-         "message": "962630 is your Facebook code. Don't share it.",
-         "time": "1 hour ago"
-      },
+getPhoneMessages function will return an array of messages recieved on the generated phone number.
+
+The array will contain the messageID, subject, and time recieved.
+
+You could loop through the array of objects and find a specific provider you are looking for.
+
+A Usage Example is left in the getPhoneID.js file.
+
+Response from api:
+{
+    "messageID": 572134,
+    "from": "Facebook",
+    "message": "962630 is your Facebook code. Don't share it.",
+    "time": "1 hour ago"
+},
 ```
       
    
- **FIXED ERRORS/BUGS**:
-      
-      `CSFR TOKEN Mis-Match | Status: Fixed`
-      
-      `XSFR-TOKEN not matching| Status: Fixed`
+**FIXED ERRORS/BUGS**:
+```
+CSFR TOKEN Mis-Match | Status: Fixed
+
+XSFR-TOKEN not matching| Status: Fixed
+```
   
