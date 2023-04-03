@@ -38,7 +38,7 @@ let dataArray = [getMessageID.data['messageData']]
 return dataArray;
 
 /* Uncomment the three lines below to return the messageID of the email you want to get the body (contents) of.
-const queryEmails = await findQueryEmails(dataArray, GeneratedEmail);
+const queryEmails = await findQueryEmails(dataArray, email);
 const messageID = queryEmails[0].messageID;
 return messageID;
 */
