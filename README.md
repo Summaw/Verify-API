@@ -1,5 +1,5 @@
 # emailGenWOtp
-Gracefully generate email accounts and view contents sent to them.
+**Gracefully generate email accounts and view contents sent to them.**
 
 
 **generateEmail** function sends a request to the api to generate a new email for you, and returns the email address.
