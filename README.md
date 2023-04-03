@@ -48,6 +48,41 @@
     
     `console.log('[+] Email Content: ' + emailBody)`
     
+**GeneratePhoneNumber**:
+
+     `generateNumber function will return an object containing the number, country code, cookie and xsfr token.`
+     
+**Usage Example**:
+
+     `const genNumber = await generateNumber();
+     
+      console.log(`[+] Generated Number: ` + genNumber.number)
+      
+      console.log(`[+] Country_Code: ` + genNumber.country_code)
+      
+      console.log(`[+] Cookies: ` + genNumber.cookie)
+      
+      console.log(`[+] XSFR-Token: ` + genNumber.x_xsfr_token)`
+      
+**GetPhoneMessages**:
+
+     `getPhoneMessages function will return an array of messages recieved on the generated phone number.`
+     
+     `The array will contain the messageID, subject, and time recieved.`
+     
+     `You could loop through the array of objects and find a specific provider you are looking for.`
+     
+     `A Usage Example is left in the getPhoneID.js file.`
+     
+     `Response from api:
+     {
+         "messageID": 572134,
+         "from": "Facebook",
+         "message": "962630 is your Facebook code. Don't share it.",
+         "time": "1 hour ago"
+     },`
+      
+   
  **FIXED ERRORS/BUGS**:
       
       `CSFR TOKEN Mis-Match | Status: Fixed`
