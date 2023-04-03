@@ -87,21 +87,22 @@ phoneMessages.forEach(msg => {
 **Contents**
 
 **Generate Email**:
-
-     `generateEmail function sends a request to the api to generate a new email for you, and returns a object (Follow instructions to return just email)`
-     `Response:`
-     `let obj = {
-        email: GenerateEmail.data.email[0],
-        cookie: `${XSFR}; ${gmailnator_session}`,
-        x_xsfr_token: `${x_xsfr_token}=`
-      }`
+generateEmail function sends a request to the api to generate a new email for you, and returns a object (Follow instructions to return just email)
+Response:
+```json
+let obj = {
+    email: GenerateEmail.data.email[0],
+    cookie: `${XSFR}; ${gmailnator_session}`,
+    x_xsfr_token: `${x_xsfr_token}=`
+}
+```
       
 **Example Usage**:
 ```javascript
-      const Genemail = await generateEmail();
-      console.log(`[+] Generated Email: ` + Genemail.email) // returns just email generated
-      console.log(`[+] Generated Email: ` + Genemail.cookie) // returns cookie (only needed for getMessageID and getEmailBody function)
-      console.log(`[+] Generated Email: ` + Genemail.x_xsfr_token) // returns xsfr token (only needed for getMessageID and getEmailBody function)
+const Genemail = await generateEmail();
+console.log(`[+] Generated Email: ` + Genemail.email) // returns just email generated
+console.log(`[+] Generated Email: ` + Genemail.cookie) // returns cookie (only needed for getMessageID and getEmailBody function)
+console.log(`[+] Generated Email: ` + Genemail.x_xsfr_token) // returns xsfr token (only needed for getMessageID and getEmailBody function)
 ```
 
  **GetMessageID**:
@@ -128,7 +129,7 @@ phoneMessages.forEach(msg => {
     
 **GeneratePhoneNumber**:
 
-     `generateNumber function will return an object containing the number, country code, cookie and xsfr token.`
+`generateNumber function will return an object containing the number, country code, cookie and xsfr token.`
      
 **Usage Example**:
 ```javascript
