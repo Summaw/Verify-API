@@ -23,3 +23,9 @@
     `const emailBody = await getEmailBody(email, messageID);`
     
     `console.log('[+] Email Content: ' + emailBody)`
+    
+ **Known Error**:
+      `CSFR TOKEN Mis-Match, I will be fixing soon.`
+      
+  
+  
