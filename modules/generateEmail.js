@@ -1,5 +1,4 @@
 const axios = require('axios');
-const fs = require('fs');
 
 const generateEmail = async () => {
   const cookie = await axios.get('https://www.emailnator.com/');
@@ -40,7 +39,7 @@ const generateEmail = async () => {
       /*
         comment the object above and uncomment the line below if you want to just generate the email not access it later on.
       */
-    // let GeneratedEmail = GenerateEmail.data.email[0];
+    // let obj = GenerateEmail.data.email[0];
     return obj;
 };
 
