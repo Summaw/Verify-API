@@ -1,8 +1,7 @@
 # emailGenWOtp
 **Gracefully generate email accounts and view contents sent to them.**
 
-![image](https://user-images.githubusercontent.com/98126132/229611744-4aa6fe1d-d4c2-4f90-8a7f-4a11a30cf5e5.png)
-
+![image](https://user-images.githubusercontent.com/98126132/229611884-27294d93-4c93-4c05-9b93-57b589a14ef8.png)
 
 
 **Contents**
