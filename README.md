@@ -20,9 +20,9 @@
    
 **GetEmailBody**:
 
-`getEmailBody function will return the body of the email you want to get the body of.`
+   `getEmailBody function will return the body of the email you want to get the body of.`
 
-`You will need to pass the email and messageID of the email you want to get the body of.`
+   `You will need to pass the email and messageID of the email you want to get the body of.`
 
 **Example**:
   
