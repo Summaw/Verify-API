@@ -2,6 +2,9 @@
 **Gracefully generate email accounts and view contents sent to them.**
 
 
+![image](https://user-images.githubusercontent.com/98126132/229611608-0090fb51-9b35-49f4-8d79-52d9ee294fd5.png)
+
+
 **Contents**
 
  **Generate Email**:
