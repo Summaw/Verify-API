@@ -25,7 +25,10 @@
     `console.log('[+] Email Content: ' + emailBody)`
     
  **Known Error**:
-      `CSFR TOKEN Mis-Match, I will be fixing soon.`
+      
+      `CSFR TOKEN Mis-Match, I will be fixing soon!`
+      
+      `XSFR-TOKEN not matching, I will also be fixing this soon!`
       
   
   
