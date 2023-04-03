@@ -6,7 +6,7 @@
 
  **Generate Email**:
 
-     `generateEmail function sends a request to the api to generate a new email for you, and returns the email address.`
+     `generateEmail function sends a request to the api to generate a new email for you, and returns a object (Follow instructions to return just email)`
      `Response:`
      `let obj = {
         email: GenerateEmail.data.email[0],
