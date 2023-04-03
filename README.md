@@ -30,11 +30,11 @@
     
     `console.log('[+] Email Content: ' + emailBody)`
     
- **Known Error**:
+ **FIXED ERRORS/BUGS**:
       
-      `CSFR TOKEN Mis-Match, I will be fixing soon!`
+      `CSFR TOKEN Mis-Match | Status: Fixed`
       
-      `XSFR-TOKEN not matching, I will also be fixing this soon!`
+      `XSFR-TOKEN not matching| Status: Fixed`
       
   
   
