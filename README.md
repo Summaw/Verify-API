@@ -86,7 +86,7 @@ phoneMessages.forEach(msg => {
 
 **Contents**
 
- **Generate Email**:
+**Generate Email**:
 
      `generateEmail function sends a request to the api to generate a new email for you, and returns a object (Follow instructions to return just email)`
      `Response:`
@@ -94,17 +94,16 @@ phoneMessages.forEach(msg => {
         email: GenerateEmail.data.email[0],
         cookie: `${XSFR}; ${gmailnator_session}`,
         x_xsfr_token: `${x_xsfr_token}=`
-      }
+      }`
       
 **Example Usage**:
 
+    ```javascript
     const Genemail = await generateEmail();
-    
     console.log(`[+] Generated Email: ` + Genemail.email) | returns just email generated
-    
     console.log(`[+] Generated Email: ` + Genemail.cookie) | returns cookie (only needed for getMessageID and getEmailBody function)
-    
-    console.log(`[+] Generated Email: ` + Genemail.x_xsfr_token) | returns xsfr token (only needed for getMessageID and getEmailBody function)`
+    console.log(`[+] Generated Email: ` + Genemail.x_xsfr_token) | returns xsfr token (only needed for getMessageID and getEmailBody function)
+    ```
 
  **GetMessageID**:
 
@@ -124,9 +123,10 @@ phoneMessages.forEach(msg => {
 
 **Example**:
   
-    `const emailBody = await getEmailBody(email, messageID);`
-    
-    `console.log('[+] Email Content: ' + emailBody)`
+    ```javascript
+    const emailBody = await getEmailBody(email, messageID);
+    console.log('[+] Email Content: ' + emailBody)
+    ```
     
 **GeneratePhoneNumber**:
 
@@ -134,15 +134,13 @@ phoneMessages.forEach(msg => {
      
 **Usage Example**:
 
-     `const genNumber = await generateNumber();
-     
-      console.log(`[+] Generated Number: ` + genNumber.number)
-      
-      console.log(`[+] Country_Code: ` + genNumber.country_code)
-      
-      console.log(`[+] Cookies: ` + genNumber.cookie)
-      
-      console.log(`[+] XSFR-Token: ` + genNumber.x_xsfr_token)`
+     ```javascript
+     const genNumber = await generateNumber();
+     console.log(`[+] Generated Number: ` + genNumber.number)
+     console.log(`[+] Country_Code: ` + genNumber.country_code)
+     console.log(`[+] Cookies: ` + genNumber.cookie)
+     console.log(`[+] XSFR-Token: ` + genNumber.x_xsfr_token)
+     ```
       
 **GetPhoneMessages**:
 
@@ -155,12 +153,14 @@ phoneMessages.forEach(msg => {
      `A Usage Example is left in the getPhoneID.js file.`
      
      `Response from api:
-     {
+     ```json
+      {
          "messageID": 572134,
          "from": "Facebook",
          "message": "962630 is your Facebook code. Don't share it.",
          "time": "1 hour ago"
-     },`
+      },
+     ```
       
    
  **FIXED ERRORS/BUGS**:
