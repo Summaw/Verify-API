@@ -26,7 +26,6 @@ const generateEmail = async () => {
             'x-xsrf-token': 'eyJpdiI6IkQ0Q1R1MWtrWFBCOVhrbS9saHNpOXc9PSIsInZhbHVlIjoiNXFoRjFlSlNpRFYzVVZwR210aFRPcmhXVDhIRU5mbHF4VWlBVlpTZ2kvakhDRlR5Q3NkTlZRcCtMVXZIYm01bXVNa1VhRjU3THRuRFh0UzJVNEliK0dmMlNQZXFvVytRYTBCZDF1cHlqd3FqdVd3Z2lHWXcxUGZzME83YjNiSWkiLCJtYWMiOiIxMzAzYWZiYzI3OTBmNjU1NTlkNDAxODExMTg3ZDU3YjAyZTZkZjFhYzllNjIzOGRiY2NiMzcwZGVlN2IxZmNhIiwidGFnIjoiIn0='
           }
         });
-    // console.log(GenerateEmail.headers)
     let GeneratedEmail = GenerateEmail.data.email[0];
     return GeneratedEmail;
 };
