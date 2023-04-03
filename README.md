@@ -91,7 +91,7 @@ generateEmail function sends a request to the api to generate a new email for yo
 
 Response:
 
-```
+```javascript
 let obj = {
     email: GenerateEmail.data.email[0],
     cookie: `${XSFR}; ${gmailnator_session}`,
@@ -121,6 +121,7 @@ Instructions are left in the getMessageID.js file.
 **GetEmailBody**:
 ```
 getEmailBody function will return the body of the email you want to get the body of.
+
 You will need to pass the email and messageID of the email you want to get the body of.
 ```
 
@@ -143,7 +144,7 @@ generateNumber function will return an object containing the number, country cod
   console.log(`[+] Cookies: ` + genNumber.cookie)
   console.log(`[+] XSFR-Token: ` + genNumber.x_xsfr_token)
 ```
-      
+    
 **GetPhoneMessages**:
 ```
 getPhoneMessages function will return an array of messages recieved on the generated phone number.
