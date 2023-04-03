@@ -89,7 +89,7 @@ phoneMessages.forEach(msg => {
 **Generate Email**:
 generateEmail function sends a request to the api to generate a new email for you, and returns a object (Follow instructions to return just email)
 Response:
-```json
+```
 let obj = {
     email: GenerateEmail.data.email[0],
     cookie: `${XSFR}; ${gmailnator_session}`,
@@ -152,7 +152,7 @@ console.log(`[+] Generated Email: ` + Genemail.x_xsfr_token) // returns xsfr tok
      
      `Response from api:`
      
- ```json
+```
       {
          "messageID": 572134,
          "from": "Facebook",
