@@ -1,5 +1,5 @@
 # Verify-API
-**Gracefully generate emails and phone numnbers and view content(s) sent to them.**
+**Gracefully generate emails and phone numbers and view content(s) sent to them.**
 
 ![image](https://user-images.githubusercontent.com/98126132/229611884-27294d93-4c93-4c05-9b93-57b589a14ef8.png)
 
